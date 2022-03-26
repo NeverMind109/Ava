@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+}
+p {
+  margin: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  // font-family: 'Oswald', sans-serif;
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  overflow-x: hidden;
+}
+.section {
+  padding-top: 100px;
+}
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.section-uptitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #0057ff;
+}
+.button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 14px 10px;
+  cursor: pointer;
+  border: none;
+}
+.button-first {
+  background: #0057ff;
+}
+.button-first {
+  background: #ffa332;
+}
