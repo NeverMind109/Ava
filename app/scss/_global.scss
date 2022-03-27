@@ -78,6 +78,7 @@ body {
   border: 2px solid #0057ff;
   &:hover {
     box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+    color: #fff;
   }
   &:active {
     box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
@@ -89,6 +90,7 @@ body {
   border: 2px solid #ffa332;
   &:hover {
     box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+    color: #fff;
   }
   &:active {
     box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
@@ -137,7 +139,7 @@ body {
     z-index: 25;
     width: 30px;
     height: 30px;
-    transition: all 0.1s;
+    transition: all 0.01s;
     .menu-mobile__line {
       &:nth-of-type(1) {
         transform: rotate(45deg);
@@ -152,4 +154,11 @@ body {
       }
     }
   }
+}
+.star {
+  background: url("../images/star-icon.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
 }

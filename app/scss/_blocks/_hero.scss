@@ -1,0 +1,69 @@
+.hero {
+  &__wrapper {
+    margin: 0;
+  }
+  &__information {
+    padding: 0;
+  }
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 56px;
+    line-height: 66px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 39px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 17px;
+  }
+  &__author {
+    margin-bottom: 40px;
+  }
+  &__author-avatar {
+    max-width: 100%;
+  }
+  &__author-profile {
+    margin-left: 20px;
+  }
+  &__author-name {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  &__button {
+    width: 176px;
+  }
+  &__image {
+    position: relative;
+    padding: 0;
+    text-align: center;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../images/hero-decor-img-1.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100px;
+      height: 100px;
+      top: 31%;
+      left: 7%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../images/hero-decor-img-2.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 300px;
+      height: 300px;
+      bottom: 8%;
+      right: -15%;
+    }
+  }
+  &__img {
+    max-width: 100%;
+  }
+}
