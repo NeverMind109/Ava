@@ -29,6 +29,14 @@
   }
 }
 @include media-breakpoint-down(lg) {
+  .section-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .section-uptitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
   .hero {
     &__title {
       font-size: 45px;
@@ -49,6 +57,70 @@
         bottom: 10%;
         right: -13%;
       }
+    }
+  }
+  .solution {
+    padding: 75px 0;
+    position: relative;
+    &::before {
+      width: 50px;
+      height: 50px;
+      left: 39%;
+    }
+    &__title {
+      line-height: 40px;
+      margin: 0 auto 30px;
+    }
+    &__text {
+      max-width: 90%;
+      text-align: center;
+      margin: 0 auto 50px;
+    }
+    &__image {
+      margin-bottom: 40px;
+      position: relative;
+      &::before {
+        width: 50px;
+        height: 50px;
+        top: 5%;
+        left: -3%;
+      }
+      &::after {
+        width: 100px;
+        height: 100px;
+        bottom: -11%;
+        right: -2%;
+      }
+    }
+    &__img {
+      height: 300px;
+    }
+  }
+  .feedback {
+    &__information {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &__title {
+      text-align: center;
+      margin: 0 auto 40px;
+    }
+    &__text {
+      text-align: center;
+      margin: 0 auto 15px;
+    }
+    &__card {
+      text-align: center;
+    }
+    &__card-img {
+      margin: 0 auto 20px;
+    }
+    &__card-text {
+      max-width: 195px;
+      margin: 0 auto;
+    }
+    &__contact {
+      max-width: 100%;
     }
   }
 }
@@ -116,8 +188,52 @@
       }
     }
   }
+  .solution {
+    padding: 50px 0;
+    &::before {
+      display: none;
+    }
+    &__image {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &__img {
+      height: 200px;
+    }
+  }
+  .feedback {
+    padding: 30px 0;
+    &__card-text {
+      max-width: 100%;
+    }
+    &__contact {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &__contact-form {
+      padding: 30px 20px;
+    }
+    &__form-name {
+      padding: 0;
+    }
+    &__form-email {
+      padding: 0;
+    }
+  }
 }
 @include media-breakpoint-down(sm) {
+  .section-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
   .hero {
     &__title {
       font-size: 35px;
@@ -134,6 +250,44 @@
     &__img {
       width: 250px;
       height: 300px;
+    }
+  }
+  .solution {
+    padding: 50px 0 20px;
+    &__title {
+      margin: 0 auto 20px;
+    }
+    &__text {
+      margin: 0 auto 20px;
+    }
+    &__image {
+      margin-bottom: 20px;
+    }
+    &__img {
+      height: 150px;
+    }
+  }
+  .feedback {
+    padding: 20px 0;
+    &__title {
+      width: 90%;
+      margin: 0 auto 20px;
+    }
+    &__text {
+      width: 90%;
+    }
+    &__cards {
+      margin-bottom: 20px;
+    }
+    &__contact-title {
+      margin: 0 auto 20px;
+    }
+    &__contact-img {
+      width: 80%;
+      height: 150px;
+    }
+    &__contact-form {
+      padding: 20px 10px;
     }
   }
 }

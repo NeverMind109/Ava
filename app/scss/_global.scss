@@ -41,6 +41,9 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+main {
+  overflow-x: hidden;
+}
 .section {
   padding-top: 100px;
 }
@@ -161,4 +164,9 @@ body {
   background-size: cover;
   width: 18px;
   height: 18px;
+}
+.invalid-feedback {
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
 }

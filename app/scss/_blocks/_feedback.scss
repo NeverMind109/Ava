@@ -1,0 +1,174 @@
+.feedback {
+  padding: 60px 0 30px;
+  &__wrapper {
+    margin: 0;
+  }
+  &__information {
+    padding: 0;
+  }
+  &__title {
+    margin-bottom: 48px;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 17px;
+  }
+  &__cards {
+    margin-bottom: 30px;
+  }
+  &__card {
+    border: none;
+    border-radius: 0;
+  }
+  &__card-img {
+    margin-bottom: 28px;
+  }
+  &__card-body {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  &__card-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  &__card-footer {
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    padding: 0;
+  }
+  &__card-text {
+    max-width: 195px;
+    line-height: 24px;
+  }
+  &__button {
+    width: 140px;
+  }
+  &__contact {
+    max-width: 540px;
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 8px 28px rgba(83, 83, 83, 0.15);
+    border-radius: 15px;
+    padding: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../images/feedback-decor-img-1.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100px;
+      height: 100px;
+      top: 13%;
+      left: -11%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../images/feedback-decor-img-2.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 200px;
+      height: 200px;
+      bottom: 12%;
+      right: -20%;
+    }
+  }
+  &__contact-img {
+    max-width: 100%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  &__contact-form {
+    margin: 0;
+    padding: 57px 40px 55px;
+    text-align: center;
+  }
+  &__contact-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 29px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+  &__form {
+    margin: 0;
+  }
+  &__form-input {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 60px;
+    text-align: left;
+    color: #000000;
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    transition: none;
+    padding: 0 10px 0 26px;
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 60px;
+      text-align: left;
+      color: #000000;
+    }
+    &:focus {
+      color: #000;
+      border-color: #000;
+      box-shadow: none;
+    }
+  }
+  &__form-name {
+    padding-left: 0;
+    margin-bottom: 32px;
+  }
+  &__form-email {
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+  &__form-subject {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+  &__form-message {
+    padding: 0;
+  }
+  &__form-textarea {
+    width: 100%;
+    min-height: 140px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+    resize: none;
+    padding: 10px 50px 10px 26px;
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    margin-bottom: 38px;
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+      text-align: left;
+      color: #000000;
+    }
+    &:focus {
+      color: #000;
+      border-color: #000;
+      box-shadow: none;
+    }
+  }
+  &__form-button {
+    width: 100%;
+  }
+}
