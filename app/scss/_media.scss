@@ -1,4 +1,12 @@
 @include media-breakpoint-down(xxl) {
+  .price {
+    &__indicators {
+      max-width: 450px;
+    }
+    &__card {
+      max-width: 450px;
+    }
+  }
 }
 @include media-breakpoint-down(xl) {
   .hero {
@@ -129,6 +137,9 @@
     &__contact {
       max-width: 100%;
     }
+    &__contact-img {
+      border-radius: 0;
+    }
   }
   .questions {
     padding: 100px 0 30px;
@@ -156,6 +167,27 @@
     }
     &__accordion-text {
       text-align: left;
+    }
+  }
+  .price {
+    &__indicators {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    &__title {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__text {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__card {
+      max-width: 100%;
+    }
+    &__card-img {
+      border-radius: 0;
     }
   }
 }
@@ -253,6 +285,9 @@
         display: none;
       }
     }
+    &__contact-img {
+      border-radius: 15px 15px 0px 0px;
+    }
     &__contact-form {
       padding: 30px 20px;
     }
@@ -282,6 +317,26 @@
     }
     &__accordion-body {
       padding: 0 20px 15px 20px;
+    }
+  }
+  .price {
+    padding: 50px 0 30px;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__card-img {
+      border-radius: 15px 15px 0px 0px;
+    }
+    &__card-body {
+      text-align: center;
+      padding: 20px 50px 40px;
+    }
+    &__card-list {
+      text-align: center;
+      margin-bottom: 30px;
     }
   }
 }
@@ -339,8 +394,7 @@
       margin: 0 auto 20px;
     }
     &__contact-img {
-      width: 80%;
-      height: 150px;
+      height: 200px;
     }
     &__contact-form {
       padding: 20px 10px;
@@ -357,9 +411,6 @@
       width: 300px;
       height: 350px;
     }
-    &__information {
-      max-width: 90%;
-    }
     &__title {
       margin-bottom: 20px;
     }
@@ -374,6 +425,25 @@
       &:after {
         right: 30px;
       }
+    }
+  }
+  .price {
+    padding: 20px 0;
+    &__progress-info {
+      padding: 0;
+    }
+    &__card-body {
+      padding: 20px;
+    }
+    &__card-tag {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__card-list {
+      margin-bottom: 30px;
+    }
+    &__card-item {
+      padding: 0;
     }
   }
 }
