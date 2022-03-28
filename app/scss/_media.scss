@@ -27,6 +27,13 @@
       height: 500px;
     }
   }
+  .questions {
+    padding: 150px 0 30px;
+    &__img {
+      width: 400px;
+      height: 550px;
+    }
+  }
 }
 @include media-breakpoint-down(lg) {
   .section-title {
@@ -121,6 +128,34 @@
     }
     &__contact {
       max-width: 100%;
+    }
+  }
+  .questions {
+    padding: 100px 0 30px;
+    &__image {
+      position: relative;
+      padding: 0;
+      &:before {
+        left: 12%;
+        bottom: 0%;
+      }
+    }
+    &__img {
+      margin: 0 auto;
+    }
+    &__information {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__text {
+      margin-bottom: 50px;
+    }
+    &__accordion-text {
+      text-align: left;
     }
   }
 }
@@ -228,6 +263,27 @@
       padding: 0;
     }
   }
+  .questions {
+    padding: 50px 0 30px;
+    &__image {
+      &:before {
+        width: 50px;
+        height: 50px;
+        left: 15%;
+        bottom: 10%;
+      }
+    }
+    &__img {
+      width: 400px;
+      height: 450px;
+    }
+    &__accordion-button {
+      padding: 20px 55px 20px 20px;
+    }
+    &__accordion-body {
+      padding: 0 20px 15px 20px;
+    }
+  }
 }
 @include media-breakpoint-down(sm) {
   .section-title {
@@ -288,6 +344,36 @@
     }
     &__contact-form {
       padding: 20px 10px;
+    }
+  }
+  .questions {
+    padding: 20px 0;
+    &__image {
+      &:before {
+        display: none;
+      }
+    }
+    &__img {
+      width: 300px;
+      height: 350px;
+    }
+    &__information {
+      max-width: 90%;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 15px;
+    }
+    &__accordion-button {
+      padding: 15px 60px 15px 30px;
+      &::before {
+        right: 30px;
+      }
+      &:after {
+        right: 30px;
+      }
     }
   }
 }

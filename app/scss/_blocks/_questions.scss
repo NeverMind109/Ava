@@ -1,0 +1,100 @@
+.questions {
+  padding: 200px 0 37px;
+  &__wrapper {
+    margin: 0;
+  }
+  &__image {
+    position: relative;
+    padding: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      background: url("../images/questions-decor-img-1.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100px;
+      height: 100px;
+      left: -15%;
+      bottom: -12%;
+    }
+  }
+  &__img {
+    max-width: 100%;
+  }
+  &__information {
+    max-width: 540px;
+    padding: 0;
+    text-align: left;
+  }
+  &__title {
+    margin-bottom: 48px;
+  }
+  &__text {
+    font-size: 15px;
+    margin-bottom: 57px;
+  }
+  &__accordion {
+    border: 1px solid #e7e7e7;
+    border-radius: 20px;
+  }
+  &__accordion-item {
+    border: none;
+    border-radius: 0;
+  }
+  &__accordion-button {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 30px 55px 30px 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      background-color: #0057ff;
+      transform: rotate(90deg);
+      transition: transform 0.1s;
+      top: 50%;
+      right: 23px;
+      z-index: 30;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      background: none;
+      background-color: #0057ff;
+      transition: transform 0.1s;
+      top: 50%;
+      right: 23px;
+      transform: translateY(-50%);
+      z-index: 30;
+    }
+    &:not(.collapsed) {
+      color: #000;
+      background-color: #fff;
+      box-shadow: none;
+    }
+    &:not(.collapsed):before {
+      content: "";
+      transform: rotate(45deg);
+    }
+    &:not(.collapsed):after {
+      content: "";
+      transform: rotate(-45deg);
+    }
+    &:focus {
+      border-color: #000;
+      box-shadow: none;
+    }
+  }
+  &__accordion-body {
+    padding: 0 0 15px 40px;
+  }
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
