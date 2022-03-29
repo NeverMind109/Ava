@@ -42,10 +42,7 @@ body {
   overflow-x: hidden;
 }
 main {
-  overflow-x: hidden;
-}
-.section {
-  padding-top: 100px;
+  overflow: hidden;
 }
 .section-title {
   font-family: "Oswald", sans-serif;
@@ -169,4 +166,40 @@ main {
   text-align: left;
   font-size: 12px;
   line-height: 20px;
+}
+.sordic {
+  background: url("../images/sordic-logo.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 38px;
+}
+.oprah {
+  background: url("../images/oprah-logo.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 44px;
+}
+.mattlab {
+  background: url("../images/mattlab-logo.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 36px;
+}
+.together {
+  background: url("../images/together-logo.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 40px;
+}
+.codeflame {
+  background: url("../images/codeflame-logo.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 31px;
+}
+.modus {
+  background: url("../images/modus-logo.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 27px;
 }
