@@ -42,6 +42,16 @@
       height: 550px;
     }
   }
+  .reviews {
+    padding: 150px 0 50px;
+    &__slide {
+      max-width: 290px;
+      padding: 20px;
+    }
+    .slick-dots {
+      bottom: -55px;
+    }
+  }
 }
 @include media-breakpoint-down(lg) {
   .section-title {
@@ -189,6 +199,9 @@
     &__card-img {
       border-radius: 0;
     }
+  }
+  .reviews {
+    padding: 100px 0 50px;
   }
 }
 @include media-breakpoint-down(md) {
@@ -339,6 +352,9 @@
       margin-bottom: 30px;
     }
   }
+  .reviews {
+    padding: 50px 0;
+  }
 }
 @include media-breakpoint-down(sm) {
   .section-title {
@@ -444,6 +460,13 @@
     }
     &__card-item {
       padding: 0;
+    }
+  }
+  .reviews {
+    padding: 30px 0 50px;
+    &__slide {
+      max-width: 100%;
+      padding: 20px 10px;
     }
   }
 }

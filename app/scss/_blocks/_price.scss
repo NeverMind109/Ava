@@ -59,6 +59,7 @@
   &__card-img {
     max-width: 100%;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
   }
   &__card-title {
     position: absolute;
