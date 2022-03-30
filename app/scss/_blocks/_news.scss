@@ -1,0 +1,107 @@
+.news {
+  position: relative;
+  padding: 100px 0;
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/news-decor-img-1.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: -5%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../images/new-decor-img-2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    bottom: 6%;
+    right: -24%;
+  }
+  &__wrapper {
+    margin: 0;
+  }
+  &__uptitle {
+    display: block;
+    padding: 0;
+    margin-bottom: 4px;
+  }
+  &__title {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 66px;
+  }
+  &__articles {
+    padding-left: 0;
+  }
+  &__article {
+    background: #ffffff;
+    border: 1px solid #d9dcec;
+    border-radius: 10px;
+    padding: 21px;
+    &:hover {
+      color: #000;
+    }
+  }
+  &__article-img {
+    border-radius: 10px;
+  }
+  &__article-information {
+    max-width: 235px;
+    margin-left: 30px;
+  }
+  &__article-uptitle {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #0057ff;
+  }
+  &__article-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &__article-text {
+    line-height: 24px;
+  }
+  &__image {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #d9dcec;
+    border-radius: 10px;
+    text-align: center;
+    padding: 21px;
+    &:hover {
+      color: #000;
+    }
+  }
+  &__img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  &__information {
+    position: absolute;
+    max-width: 460px;
+    text-align: left;
+    bottom: 56px;
+    left: 51px;
+  }
+  &__information-uptitle {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #0057ff;
+  }
+}
