@@ -4,12 +4,13 @@ $(function () {
       $(".menu").toggleClass("menu--active");
       $("body").toggleClass("overflow-hidden");
       $(".menu-mobile").toggleClass("menu-mobile--active");
-      let link = $(".menu-list__link");
+      let link = $(".menu__list-link");
       let logo = $(".logo");
       function click(element) {
         element.on("click", function () {
           $(".menu").removeClass("menu--active");
           $("body").removeClass("overflow-hidden");
+          $(".menu-mobile").removeClass("menu-mobile--active");
         });
       }
       click(link);
@@ -68,5 +69,18 @@ $(function () {
         },
       },
     ],
+  });
+
+  $("a.scroll-to").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr("href");
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor).offset().top - 0,
+        },
+        200
+      );
   });
 });

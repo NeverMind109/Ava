@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div
           class="row header__wrapper d-flex align-items-center justify-content-between col-12"
@@ -34,22 +34,26 @@
             <nav class="menu__navigation">
               <ul class="menu__list d-flex align-items-center">
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Home</a>
+                  <a class="menu__list-link scroll-to" href="#header">Home</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">About</a>
+                  <a class="menu__list-link scroll-to" href="#solutions"
+                    >About</a
+                  >
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">pricing</a>
+                  <a class="menu__list-link scroll-to" href="#price">pricing</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Blog</a>
+                  <a class="menu__list-link scroll-to" href="#news">Blog</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Faq</a>
+                  <a class="menu__list-link scroll-to" href="#questions">Faq</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">contact</a>
+                  <a class="menu__list-link scroll-to" href="#feedback"
+                    >contact</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -121,7 +125,7 @@
             </div>
           </div>
         </section>
-        <section class="solution">
+        <section class="solution" id="solutions">
           <div class="row solution__wrapper d-flex flex-column col-12">
             <span class="section-uptitle solution__uptitle"
               >Event Technology</span
@@ -205,7 +209,7 @@
                 >Read more</a
               >
             </div>
-            <div class="feedback__contact col-lg-6 col-12">
+            <div class="feedback__contact col-lg-6 col-12" id="feedback">
               <img
                 class="feedback__contact-img"
                 src="images/feedback-form-img.jpg"
@@ -283,7 +287,7 @@
             </div>
           </div>
         </section>
-        <section class="questions">
+        <section class="questions" id="questions">
           <div
             class="row questions__wrapper d-flex align-items-lg-center align-items-start justify-content-lg-between justify-content-center col-12"
           >
@@ -502,7 +506,10 @@
                 </div>
               </div>
             </div>
-            <div class="price__card d-flex flex-column col-lg-6 col-12">
+            <div
+              class="price__card d-flex flex-column col-lg-6 col-12"
+              id="price"
+            >
               <div class="price__card-image">
                 <img
                   class="price__card-img"
@@ -531,7 +538,7 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <div class="reviews" id="team">
           <div class="reviews__slider">
             <div
               class="reviews__slide d-flex flex-column justify-content-between"
@@ -550,7 +557,7 @@
                   width="80"
                   height="80"
                 />
-                <h5 class="reviews__slide-name">Martin Eduard</h5>
+                <h4 class="reviews__slide-name">Martin Eduard</h4>
                 <span class="reviews__slide-position">CEO of Marketing</span>
                 <div class="reviews__slide-stars d-flex justify-content-center">
                   <span class="reviews__slide-star star"></span>
@@ -578,7 +585,7 @@
                   width="80"
                   height="80"
                 />
-                <h5 class="reviews__slide-name">Martin Eduard</h5>
+                <h4 class="reviews__slide-name">Martin Eduard</h4>
                 <span class="reviews__slide-position">Salesman</span>
                 <div class="reviews__slide-stars d-flex justify-content-center">
                   <span class="reviews__slide-star star"></span>
@@ -608,7 +615,7 @@
                   width="80"
                   height="80"
                 />
-                <h5 class="reviews__slide-name">Martin Eduard</h5>
+                <h4 class="reviews__slide-name">Martin Eduard</h4>
                 <span class="reviews__slide-position">Sales Manager</span>
                 <div class="reviews__slide-stars d-flex justify-content-center">
                   <span class="reviews__slide-star star"></span>
@@ -636,7 +643,7 @@
                   width="80"
                   height="80"
                 />
-                <h5 class="reviews__slide-name">Martin Eduard</h5>
+                <h4 class="reviews__slide-name">Martin Eduard</h4>
                 <span class="reviews__slide-position">Web designer</span>
                 <div class="reviews__slide-stars d-flex justify-content-center">
                   <span class="reviews__slide-star star"></span>
@@ -664,7 +671,7 @@
                   width="80"
                   height="80"
                 />
-                <h5 class="reviews__slide-name">Martin Eduard</h5>
+                <h4 class="reviews__slide-name">Martin Eduard</h4>
                 <span class="reviews__slide-position">CEO of Marketing</span>
                 <div class="reviews__slide-stars d-flex justify-content-center">
                   <span class="reviews__slide-star star"></span>
@@ -692,7 +699,7 @@
                   width="80"
                   height="80"
                 />
-                <h5 class="reviews__slide-name">Martin Eduard</h5>
+                <h4 class="reviews__slide-name">Martin Eduard</h4>
                 <span class="reviews__slide-position">Salesman</span>
                 <div class="reviews__slide-stars d-flex justify-content-center">
                   <span class="reviews__slide-star star"></span>
@@ -704,7 +711,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <div class="quote">
           <div class="quote__wrapper">
             <span class="section-uptitle quote__uptitle"
@@ -715,7 +722,7 @@
               terrific from the advertiser's perspective. Even if it's not much
               of a secret, it's still a pretty good marketing idea."
             </p>
-            <a class="button button-first quote__link" href="#"
+            <a class="button button-first quote__link" href="#team"
               >Meet the team</a
             >
           </div>
@@ -744,7 +751,7 @@
             ></div>
           </div>
         </div>
-        <section class="news">
+        <section class="news" id="news">
           <span class="section-uptitle news__uptitle">FROM OUR BLOG</span>
           <h2 class="section-title news__title">Recent News & Updates</h2>
           <div
@@ -820,6 +827,83 @@
         </section>
       </div>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div
+            class="row footer__upper d-flex align-items-md-start align-items-center justify-content-between order-1 col-12"
+          >
+            <a
+              class="footer__logo d-flex justify-content-center justify-content-md-start col-md-2 col-12"
+              href="#"
+            >
+              <img
+                class="footer__img"
+                src="images/logo-footer.svg"
+                alt="Logo"
+                width="120"
+                height="42"
+              />
+            </a>
+            <ul
+              class="footer__list d-flex flex-column flex-md-row align-items-md-start align-items-center justify-content-end order-2 col-md-8 col-12"
+            >
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Style-guide</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Licenses</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Changelog</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Terms</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Password</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">404</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="row footer__bottom d-flex flex-column flex-md-row align-items-end justify-content-between col-12"
+          >
+            <ul
+              class="footer__copy-list d-flex flex-column flex-md-row align-items-center order-4 order-md-3 col-md-6 col-12"
+            >
+              <li class="footer__copy-item d-flex align-items-center">
+                Created with love by<span class="footer__copy-author"
+                  >Dorian Hoxha</span
+                >
+              </li>
+              <li class="footer__copy-item d-flex align-items-center">
+                Powered by<span class="footer__copy-author">Webflow</span>
+              </li>
+            </ul>
+            <div
+              class="footer__social d-flex justify-content-md-end justify-content-center order-3 order-md-4 col-md-6 col-12"
+            >
+              <a
+                class="footer__social-item footer__facebook facebook"
+                href="#"
+              ></a>
+              <a
+                class="footer__social-item footer__twitter twitter"
+                href="#"
+              ></a>
+              <a class="footer__social-item footer__vimeo vimeo" href="#"></a>
+              <a
+                class="footer__social-item footer__pinterest pinterest"
+                href="#"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>
